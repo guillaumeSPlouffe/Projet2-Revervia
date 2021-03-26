@@ -1,3 +1,114 @@
-h1{
-    color: red;
+body {
+    font-family: "Raleway", sans-serif;
 }
+
+.navbar{
+    background-color: green;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.navbar2{
+  display: flex;
+  justify-content: flex-end;
+  background-color: lawngreen;
+}
+ul > li {
+    list-style-type: none;
+}
+li {
+    /* display: inline; */
+    list-style-type: none;
+}
+li a{
+    color: black;
+    text-decoration: none;
+    margin: 50px 50px 0 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+h3{
+    
+}
+button{
+    
+}
+.fas fa-info-circle{
+    display: inline;
+}
+p{
+    display: inline;
+}
+
+article > img {
+    width: 100px;
+}
+
+
+/* ----------------POSITIONNEMENT--------------*/
+
+.container1{
+    display: flex;
+}
+
+.box1{
+    
+background-color: aqua;
+display: flex;
+    
+}
+
+.box2{
+  
+   background-color: blue;
+}
+
+.box1_1{
+    background-color:blueviolet;
+}
+.box1_4{
+    background-color:brown;
+
+}
+
+.section3{
+    
+}
+
+
+
+
+
+
+
+
+  .footer_main{
+      background-color: lightgray;
+      text-decoration: none;
+      display: flex;
+      justify-content:space-around;
+      align-items:flex-start;
+  }
+
+ .footer1{
+    background-color:lawngreen;
+    line-height: 2;
+    padding: 30px 0 30px 0;
+    
+}
+.footer2{
+    background-color:lawngreen;
+    line-height: 2;
+    
+}
+.footer3{
+    background-color:lawngreen;
+    line-height: 2;
+    
+} 

@@ -1,114 +1,437 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway", sans-serif; 
+    margin: 10px 10px 10px 10px;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+p{
+    font-size: smaller;
+}
+
+
+
+/*-----------------NAVBAR----------------*/
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+
+
+.logo{
+    margin-right: auto;
+   
+    
 }
 
 .navbar{
-    background-color: green;
-    display:flex;
-    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    height:4em;
+    /* background-color: lightgreen; */
+    border-top: 2px solid #0065FC;
+    margin-right: 200px;
 }
 
-.navbar2{
-  display: flex;
-  justify-content: flex-end;
-  background-color: lawngreen;
+.navbar {
+    list-style: none;
 }
-ul > li {
-    list-style-type: none;
+
+.navbar li {
+    display: inline-block;
+    padding: 0px 20px;
+    margin-right: 30px;
 }
-li {
-    /* display: inline; */
-    list-style-type: none;
-}
-li a{
+
+.navbar li a {
+    text-decoration: none;
     color: black;
-    text-decoration: none;
-    margin: 50px 50px 0 0;
 }
 
-a{
-    text-decoration: none;
-}
-
-a:hover{
+.navbar li a:hover {
     color: blue;
 }
-h3{
-    
-}
-button{
-    
-}
-.fas fa-info-circle{
-    display: inline;
-}
-p{
-    display: inline;
+#nav-1{
+    color: #0065FC;
+    /* background-color: lightcoral; */
+    height: 4em;
 }
 
-article > img {
-    width: 100px;
+
+#nav-3{
+    font-weight: bold;
+    color: #0065FC;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+
+
+/*----------------*/
+
+
+
+
+.recherche-map{
+    display: inline-block;
+    margin: 10px 0px 10px 0px;
+}
+
+.logo-map{
+    padding: 10px;
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    width: 100;
+}
+div input {
+    border: 2px solid #F2F2F2;
+    padding-right: 25px;
+    
+}
+div button {
+    border: none;
+    background-color: #0065FC;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0;
+    ;
+}
+
+::placeholder{
+    font-weight: bold;
+    opacity: 1;
+}
+
+/*---------------------*/
+
+.flexbox-filtres{
+    margin: 15px 0 15px 0;
+   
+}
+.flexbox-filtres ul{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    list-style: none;
+}
+.flexbox-filtres ul div{
+   margin-right: 20px;
+}
+.flexbox-filtres ul div li{
+    padding: 5px 10px 5px 10px;
+    font-weight: bold;
+}
+
+.flexbox-filtres ul div i{
+    border-radius: 25px;
+    color: #0065FC;
+    background-color:#DEEBFF;
+    padding: 10px 10px 10px 10px;
+}
+.flexbox-filtres ul h4{
+    margin-right: 20px;
+}
+.filtres-item1{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px 20px 20px 20px;
+    align-items: center;
+}
+.filtres-item2{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    align-items: center;
+}
+.filtres-item3{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    align-items: center;
+}
+.filtres-item4{
+    display: flex;
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.flexbox-info{
+    display: flex;
+    margin: 20px 0px 20px 0px;
+
+}
+.flexbox-info i {
+    margin-right: 10px;
+    border: 1px solid rgb(0, 0, 0,0.1 );
+    border-radius: 20px;
+    padding: 3px 7px 3px 7px;
+    color: #0065FC ;
+    font-size:11px;
+}
+.etoile-pleine{
+    color:#0065FC ;
+}
+.etoile-vide{
+    color: #F2F2F2;
 }
 
 
 /* ----------------POSITIONNEMENT--------------*/
 
-.container1{
+.container1 img,.container2 img{
+    width: 200px;
+    max-height: 100px;
+}
+.container3 img{
+    width: 250px;
+}
+
+
+.Activites-Marseille{
+    margin: 30px 0px 10px 0px;
+}
+
+
+.container3-item2{
     display: flex;
 }
-
-.box1{
-    
-background-color: aqua;
-display: flex;
-    
-}
-
-.box2{
-  
-   background-color: blue;
-}
-
-.box1_1{
-    background-color:blueviolet;
-}
-.box1_4{
-    background-color:brown;
-
-}
-
-.section3{
-    
-}
-
-
-
-
-
-
+/* ----------FOOTER--------------*/
 
 
   .footer_main{
-      background-color: lightgray;
-      text-decoration: none;
-      display: flex;
-      justify-content:space-around;
-      align-items:flex-start;
+     
   }
 
- .footer1{
-    background-color:lawngreen;
+.footer-bg{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #0065FC;
+}
+
+
+
+ /* .footer1{
     line-height: 2;
-    padding: 30px 0 30px 0;
-    
+    margin: 50px 300px 50px 50px;
 }
 .footer2{
-    background-color:lawngreen;
     line-height: 2;
+    margin: 50px 0px 50px 0px;
     
 }
 .footer3{
-    background-color:lawngreen;
     line-height: 2;
+    margin: 50px 50px 50px 300px;
+}  */
+
+
+
+/*--------------------FLEXBOX----------------------*/
+
+.main_container{
+    display:inline-flex; 
+    flex-wrap: wrap;  
+    /* background-color: pink; */
+}
+
+.container1{
+ display: inline-flex;
+ flex-wrap: wrap;
+ background-color: #F2F2F2;
+ padding: 20px;
+ border-radius: 10px;
+}
+
+.item1{
+  display: inline-flex;
+  flex-direction: column;
+  
+}
+.item1-1{
+  border: 2px solid #F2F2F2;
+  border-radius: 20px;
+  background-color: white;
+  padding: 3px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0,0.1);
+}
+.item1-2{
+  border: 2px solid #F2F2F2;
+  border-radius: 20px;
+  background-color: white;
+  padding: 3px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0,0.1);
+}
+.item2{
+  display: inline-flex;
+  flex-direction: column;
+  
+}
+.item2-1{
+  border: 2px solid #F2F2F2;
+  border-radius: 20px;
+  background-color: white;
+  padding: 3px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0,0.1);
+}
+.item2-2{
+  border: 2px solid #F2F2F2;
+  border-radius: 20px;
+  background-color: white;
+  padding: 3px;
+  margin: 10px 10px 10px 10px;
+  box-shadow: 1px 1px 1px 1px rgb(0, 0, 0,0.1);
+}
+.item3{
+    display: inline-flex;
+    flex-direction: column;
     
-} 
+  }
+  .item3-1{
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    background-color: white;
+    padding: 3px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0,0.1);
+  }
+  .item3-2{
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    background-color: white;
+    padding: 3px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0,0.1);
+  }
+.container1 .item1 img {
+    border-radius: 20px 20px 0px 0px;
+}
+.container1 .item2 img {
+    border-radius: 20px 20px 0px 0px;
+}
+.container1 .item3 img {
+    border-radius: 20px 20px 0px 0px;
+}
+.container1 h3{
+    padding-left: 15px;
+}
+
+
+/*-------FLEXBOX2----------------*/
+
+.container2{
+    display: inline-flex;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+   }
+
+   .item4{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* background-color: aqua; */
+    height: 100%;
+    
+  }
+  .item4-1{
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    background-color: white;
+    padding: 3px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0,0.1);
+    display: flex;
+  }
+  .cropped img {
+    border-radius: 10px;
+}
+
+
+  .item4-2{
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    background-color: white;
+    padding: 3px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0,0.1);
+    display: flex;
+  }
+
+
+
+
+  .item4-3{
+    border: 2px solid #F2F2F2;
+    border-radius: 20px;
+    background-color: white;
+    padding: 3px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0,0.1);
+    display: flex;
+  }
+
+
+  /*-----------FLEXBOX 3---------------------*/
+
+  .container3{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.container3-item1{
+    display: flex;
+    flex-direction: column;
+    background-color: purple;
+}
+.container3-item1 img{
+    
+}
+.container3-item2{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+}
+.container3-item3{
+    display: flex;
+    flex-direction: column;
+    background-color: rosybrown;
+}
+.container3-item4{
+    display: flex;
+    flex-direction: column;
+    background-color: sandybrown;
+}
+
+.container3-item2-box1{
+    
+}
+.container3-item2-box2{
+   
+}.container3-item4-box1{
+   
+}
+.container3-item4-box2{
+    
+}
